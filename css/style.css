@@ -1,0 +1,867 @@
+:root{
+    --primary: #333333;
+    --black1:#1A1A1A;
+    --black2:#333333;
+    --bg:#ffffff;
+    --hover:pink;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;  
+    top: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    /* background: var(--black2); */
+    font-family: 'Montserrat', sans-serif;
+    transition: ease all .5s;
+    /* height: 3000px; */
+}
+/* content reveal */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+/* progress bar page*/
+.progress-bar{
+    position: absolute;
+    top: 0;
+    height: 5px;
+    left: 0;
+    width: 100%;
+    background-color:white;
+}
+.progress-bar-inner{
+    position: relative;
+    background-color: linear;
+    background: linear-gradient(90deg, rgba(242,105,95,1) 50%, rgba(255,175,50,1) 100%);
+    height: 5px;
+    width: 0%;
+    padding: 0;
+}
+/* class for js */
+.white {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: black;
+    transition: ease all .5s;
+}
+.black {
+    background-color: rgb(245, 245, 245);
+
+}
+.logocol{
+    color: black  ;
+}
+  
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+.scrolled .logo a{
+    color: rgba(0, 0, 0,0);
+}
+.feather-100{
+    width: 100px;
+    height: 100px;
+    stroke-width: 1;
+    color: black;
+}
+.feather-92{
+    width: 92;
+    height: 92;
+    stroke-width: 1;
+    color: black;
+}
+/* navbar start */
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    /* transition: background-color 0.3s ease-in-out; */
+    
+
+}
+
+header .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary);
+    opacity: 1;
+}
+.logocol {
+    color: rgba(0, 0, 0, 1);
+    transition: ease all 1s;
+  }
+  
+header .hamburger a{
+    display: none;
+    position: fixed;
+}
+.navbar ul{
+    display: flex;
+    /* background-color: #d4d4d4; */
+    padding: 15px 15px 15px 15px;
+}
+.navbar ul li a{
+     display: block;
+     color: black;
+     padding: 10px 15px;
+     transition: 0.2s;
+     margin: 0 5px;
+     font-size: 20px;
+}
+
+.navbar ul li a:hover{
+    background-color: var(--hover);
+}
+.navbar ul li a.active{
+    background-color: var(--hover);
+}
+/* navbar end */
+
+/* content profile start */
+.banner {
+    margin: 80px 0px 0px 0px;
+    /* border: 10px solid black; */
+    color: black;
+    background-repeat: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease all .5s;
+}
+.banner .container{
+    height: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease all .5s;
+    background: url(../img/bgcolor-01.png);
+}
+.banner .container .foto,
+.banner .container .about{
+    min-width: 100px;
+    height: 960px;
+    bottom: 0;
+    /* border: 3px solid black; */
+    flex-basis: 50%;
+}
+.banner .container .foto{
+    display: flex;  
+    /* border: 3px solid black; */
+    min-width: 100px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    overflow: hiddden;
+    background:url(../img/profilephotomirrored.png) bottom left repeat-x;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    transition: ease all .5s;
+    
+    /* background-position: -1000px; */
+}
+.banner .container .about{
+    padding: 250px 0 0 250px;
+}
+.banner .container .about h1{
+    font-size: 50px;
+    margin: 10px 0 10px 0;
+}
+.banner .container .about h3{
+    font-size: 30px;
+}
+.banner .container .about p{
+    font-size: 16px;
+    margin: 10px 200px 0 0;
+}
+.banner .container .about .icon{
+    margin: 20px 0 0 0;
+}
+.banner .container .about .icon a img{
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.banner .container .about h3 .c1{   color: #36BFAF; }
+.banner .container .about h3 .c2{   color: #FFAF32; }
+.banner .container .about h3 .c3{   color: #F2695F; }
+.banner .container .about h3 .c4{   color: #551A8B; }
+.banner .container .about h3 .c5{   color: #B361FF; }
+
+.banner .container .butt{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid ;
+    color: white;
+    font-weight: 400;
+    background-color: #F2695F;
+    border-radius: 5px;
+}
+.banner .container .butt:hover{
+    background: #FFAF32;
+    transition: .2s ease;
+}
+
+/* Banner 1 */
+
+
+
+/* Banner2 */
+.banner2{
+    padding: 100px 100px 0px 100px;
+}
+.banner2 h1{
+    width: 100%;
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 100px;
+    padding-left: 50px;
+}
+.banner2 .container{
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease all .5s;
+    
+}
+
+/* .banner2 .container .left-con .box img{
+    width: 500px;
+    background-color: #e6e6e6;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 10px 10px #a5a5a5;
+
+} */
+
+.banner2 .container .left-con{
+    min-width: 100px;
+    bottom: 0;
+    flex-basis: 50%;
+}
+.banner2 .container .left-con .box{
+    margin-left: 50px;
+    width: 800px;
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 7px 7px #a5a5a5;
+    transition: ease all .5s;
+    background-color: white;
+}
+.banner2 .container .left-con .gap{
+    height: 60px;
+}
+.banner2 .container .left-con .box:hover{
+    transform: scale(1.1);
+}
+.banner2 .container .left-con p{
+    font-size: 14px;
+    margin: 10px 10px 10px 0px;
+}
+.banner2 .container .left-con h2{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.html {width: 87%; background-color: #FFAF32;} 
+.css {width: 80%; background-color: #36BFAF;} 
+.js {width: 71%; background-color: #F2695F}
+.caja {width: 92%; background-color: #3579f7}
+.cplus {width: 73%; background-color: #35aaf7}
+.java {width: 85%; background-color: #B361FF}
+
+
+.banner2 .container .right-con .gap{
+    height: 50px;
+}
+
+.banner2 .container .right-con{
+    min-width: 100px;
+    bottom: 0;
+    flex-basis: 50%;
+
+}
+.banner2 .container .right-con .box{
+    margin-left: 50px;
+    width: 800px;
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 7px 7px #a5a5a5;
+    transition: ease all .5s;
+    background-color: white;
+}
+.banner2 .container .right-con .box:hover{
+    transform: scale(1.1);
+}
+.banner2 .container .right-con p{
+    font-size: 14px;
+    margin: 10px 10px 10px 0px;
+}
+.banner2 .container .right-con h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.bar {
+    width: 100%; 
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.skills {
+    text-align: right; 
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    height: 20px;
+    font-size: 10px;    
+}
+.skills a{
+    margin-bottom: -100px;
+}
+.id {width: 100%; background-color: #F2695F;} 
+.eg {width: 79%; background-color: #B361FF;} 
+.makan {width: 100%; background-color: #35aaf7;}
+.turu {width: 100%; background-color: #36BFAF;}
+
+/* BANNER 3 */
+.banner3{
+    padding: 50px 100px 0px 100px;
+    background-color: #F5F5F5;
+    height: 900px;
+}
+.banner3 .title h1{
+    width: 100%;
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.banner3 .card{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease all .5s;
+}
+.banner3 .card .box1, .box2, .box3{
+    min-width: 300px;
+    width: 400px;
+    margin: 80px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 10px 10px 10px 10px  #afafaf;
+    transition: ease all .5s;
+}
+.banner3 .card .box1{    border: 5px solid #FFAF32;}
+.banner3 .card .box2{    border: 5px solid #F2695F;}
+.banner3 .card .box3{    border: 5px solid #36BFAF;}
+
+.banner3 .card .box1:hover, .box2:hover, .box3:hover{
+    transform: scale(1.1);
+}
+.banner3 .card .feather-100{
+    margin: 50px 0px 50px 0px;
+}
+.banner3 .card h2{
+    margin-bottom: 25px;
+}
+.banner3 .card p{
+    margin-bottom: 100px;
+}
+.banner3 .card .vm{
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: black;
+}
+.banner3 .card .vm:hover{
+    color: #ffffff;
+}
+
+/*footer-2*/
+.footer-2{
+    margin: 10px 0px 20px 0px;
+    width: 100%;   
+    background-color: white;
+}
+.footer-2 img{
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-2 p{
+    margin-top: 40px;
+    margin-bottom: 5px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.footer-2 .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+.footer-2 .social-media a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+}
+.footer-2 .social-media a img{
+    height: 30px;
+}
+.footer-2 .footer-body p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    margin-bottom: -40px;
+    color: rgb(70, 70, 70)
+
+}
+
+.footer-2 a{
+    color: #2c2c2c;
+}
+.footer-2 a:hover{
+    color: #4d4c4c;
+    text-decoration: none;
+}
+
+/*CSS MEDIA For banner 2*/
+@media only screen and (max-width:1882px){
+    .banner3{
+        padding: 50px 100px 0px 100px;
+        background-color: #F5F5F5;
+        height: 1300px;
+    }
+} 
+@media only screen and (max-width:1850px){ 
+    .banner2 .container{
+        height: 720px;
+    }
+    .banner2 .container .left-con .box{
+        margin-left: 10px;
+        width: 600px;
+        padding: 30px;
+    }
+    .banner2 .container .left-con .gap{
+        height: 50px;
+    }
+    .banner2 .container .right-con{
+        min-width: 100px;
+    
+    }
+    .banner2 .container .right-con .box{
+        margin-left: 0px;
+        width: 600px;
+        padding: 30px;
+    }
+    .banner3 {
+        height: 1680px;
+        background-color: #F5F5F5;
+    }
+    
+}
+@media only screen and (max-width:1493px){
+    .banner3{
+        height: 1600px;
+    }
+}
+@media only screen and (max-width:1484px){
+    .banner2{
+        margin: 50px 30px 0px 30px;
+    }
+    .banner2 .container{
+        height: 720px;
+        margin-top: -50px;
+    }
+    .banner2 .container .left-con .box{
+        margin-left: 10px;
+        width: 500px;
+        padding: 30px;
+    }
+    .banner2 .container .right-con{
+        min-width: 100px;
+    }
+    .banner2 .container .right-con .box{
+        margin-top: 0px;
+        margin-left: 10px;
+        width: 500px;
+        padding: 30px;
+    }
+    .banner3 {
+        height: 1680px;
+        background-color: #F5F5F5;
+    }
+
+}
+@media only screen and (max-width:1300px){
+    .banner2{
+        padding: 100px 0px 0px 0px;
+    }
+    .banner3 {
+        height: 1680px;
+        background-color: #F5F5F5;
+    }
+}
+@media only screen and (max-width:1100px){
+    .banner2{
+        padding: 10px 0px 0px 0px;
+    }
+    .banner2 .container{
+        height: 1280px;
+    }
+    .banner2 .container .left-con{
+        margin-left: 10px;
+        flex-basis: 51%;
+    }
+    .banner2 .container .left-con .box{
+        width: 800px;
+        padding: 30px;
+    }
+    .banner2 .container .left-con .gap{
+        height: 30px;
+    }
+    .banner2 .container .right-con{
+        margin-top: -120px;
+        min-width: 100px;
+    
+    }
+    .banner2 .container .right-con .box{
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 800px;
+        padding: 30px;
+        flex-basis: 51%;
+    }
+    .banner3{
+        display: block;
+        padding: 50px 100px 0px 100px;
+        background-color: #F5F5F5;
+        height: 1800px;
+    }
+}
+@media only screen and (max-width: 1062px){
+    .banner3 {
+        height: 1680px;
+        background-color: #F5F5F5;
+    }
+
+}
+/* lappy */
+
+@media only screen and (max-width: 1560px){
+    header{
+        padding: 40px 50px 0px 0px ;
+    }
+    .banner{
+        background-size: 100%;
+    }
+    .banner2 h1{
+        margin-bottom: 50px;
+    }
+    .banner .container{
+        background-size: contain;
+        height: 740px;
+        width: 1560px;
+        display: flex;
+        flex-wrap: wrap;
+        transition: ease all .5s;
+
+        /* background-repeat: no-repeat; */
+    }
+    .banner .container .foto,
+    .banner .container .about{
+        height: 720px;
+        bottom: 0;
+    }
+
+    .banner .container .about{
+        padding: 160px 0 0 150px;
+    }
+    .banner .container .about h1{
+        font-size: 45px;
+        margin: 10px 0 10px 0;
+    }
+    .banner .container .about h3{
+        font-size: 27px;
+    }
+    .banner .container .about p{
+        font-size: 14px;
+        margin: 10px 200px 0 0;
+    }
+    .banner3{
+        height: 800px;
+    } 
+    .banner3 .card .box1, .box2, .box3{
+        margin: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 1250px){
+
+    header{
+        padding: 0 50px 0px 0px;
+    }
+    .banner{
+        background-size: 100%;
+        width: 1250px;
+        
+        background-repeat: no-repeat;
+    }
+    .banner .container{
+        /* background-size: contain; */
+        height: 610px;
+        width: 1560px;
+        display: flex;
+        flex-wrap: wrap;
+        transition: ease all .5s;
+       
+
+        /* background-repeat: no-repeat; */
+    }
+    .banner .container .foto,
+    .banner .container .about{
+        height: 610px;
+        flex-basis: 40%;
+        bottom: 0;
+    }
+
+    .banner .container .about{
+        padding: 160px 0 0 40px;
+    }
+    .banner .container .about h1{
+        font-size: 42px;
+        margin: 5px 0 5px 0;
+    }
+    .banner .container .about h3{
+        font-size: 28px;
+    }
+    .banner .container .about p{
+        font-size: 14px;
+        margin: 10px 20px 0 0;
+    }
+    .banner2 .container{
+        background-position: 62.5px 25px;
+    }
+    .banner3 {
+        height: 1280px;
+        background-color: #F5F5F5;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .banner{
+        background-size: 100%;
+        width: 1050px;
+        background-repeat: no-repeat;
+    }
+    .banner .container{
+        /* background-size: contain; */
+        height: 560px;
+        width: 1560px;
+        display: flex;
+        flex-wrap: wrap;
+        transition: ease all .5s;
+       
+
+        /* background-repeat: no-repeat; */
+    }
+    .banner .container .foto{
+        height: 560px;
+        flex-basis: 30%;
+        bottom: 0;
+    }
+
+    .banner .container .about{
+        padding: 100px 0 0 35px;
+        height: 560px;
+        flex-basis: 30%;
+        bottom: 0;
+    }
+    .banner .container .about h1{
+        font-size: 40px;
+        margin: 10px 0 10px 0;
+    }
+    .banner .container .about h3{
+        font-size: 24px;
+    }
+    .banner .container .about p{
+        font-size: 12px;
+        margin: 10px 10px 0 0;
+    }
+    .banner2 .container{
+        background-position: 60px 25px;
+        display: block;
+    }
+    .banner2 .container .right-con{
+        margin-top: 40px;
+    }
+    .banner3 {
+        height: 1280px;
+        background-color: #F5F5F5;
+    }
+}
+@media only screen and (max-width: 768px){
+    header{
+        padding: 0 20px ;
+    }
+    .banner{
+        display: flex;
+        background-size: 768px;
+        height: 400px;
+
+    }
+    .banner .container{
+        height: 400px;
+        display: block;
+        background-image: url(../img/bgcolor-01.png);
+        flex-wrap: wrap;
+        transition: ease all .5s;
+        background-repeat: no-repeat;
+    }
+    .banner .container .foto{
+        height: 400px;
+        /* width: 200px; */
+        background-size: 50%;
+        margin-left: 400px;
+        margin-top: -400px;
+    }
+    .banner .container .about{
+        height: 400px;
+        width: 400px;
+        padding: 10px 00px 0 20px;
+    }
+    .banner .container .about h1{
+        font-size: 40px;
+        margin: 10px 0 10px 0;
+    }
+    .banner .container .about h3{
+        font-size: 24px;
+    }
+    .banner .container .about p{
+        font-size: 12px;
+        margin: 10px 10px 0 0;
+    }
+    /* hamburger */
+    #menu {
+        display: inline-block;
+        padding: 30px;
+        margin-left: -50px;
+        position: fixed;
+        color: black;
+    }
+    .navbar{
+        height: 0px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #F5F5F5;
+        transition: 0.2s;
+        overflow: hidden;
+        
+    }
+    .navbar ul{
+        height: 100px;
+    }
+    .navbar.active{
+        height: 250px;
+    }
+    .navbar.active ul{
+        opacity: 1;
+    }
+    .navbar ul{
+        display: block;
+        width: fit-content 100px;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navbar ul li a{
+        margin-bottom: 12px;
+    }
+    .banner .container .about h1{
+        font-size: 30px;
+    }
+    .banner .container .about h3{
+        font-size: 18px;
+    }
+    .banner .container .about {
+        font-size: 10px;
+    }
+    .banner2 h1{
+        font-size: 35px;
+        margin-left: -10px;
+    }
+    .banner2 .container{
+        height: 1080px;
+    }
+    .banner2 .container .right-con .box,
+    .banner2 .container .left-con .box{
+        width: 600px;
+    }
+    .banner2 .container .right-con h2,
+    .banner2 .container .left-con h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+    }
+    .banner2 .container .right-con p,
+    .banner2 .container .left-con p{
+        font-size: 12px;
+        margin: 5px 0px 5px 0px;
+    }
+    .banner3{
+        padding: 50px 10px 0px 30px;
+        background-color: #F5F5F5;
+        height: 1760px;
+    }
+
+}
+@media only screen and (max-width: 656px){
+    .banner .container .foto{
+        height: 400px;
+        /* width: 200px; */
+        background-size: 40%;
+        margin-left: 300px;
+        margin-top: -400px;
+    }
+    .banner1 .container{
+        height: 0px;
+    }
+    .banner2 .container .left-con .box{
+        width: 450px;
+    }
+    .banner2 .container .right-con .box{
+        width: 450px;
+    }
+}
