@@ -285,7 +285,7 @@ header .hamburger a{
 .js {width: 71%; background-color: #F2695F}
 .caja {width: 92%; background-color: #3579f7}
 .cplus {width: 73%; background-color: #35aaf7}
-.java {width: 85%; background-color: #B361FF}
+.java {width: 75%; background-color: #B361FF}
 
 
 .banner2 .container .right-con .gap{
@@ -339,7 +339,7 @@ header .hamburger a{
 .skills a{
     margin-bottom: -100px;
 }
-.id {width: 99.5%; background-color: #F2695F;} 
+.id {width: 99.8%; background-color: #F2695F;} 
 .eg {width: 79%; background-color: #B361FF;} 
 .makan {width: 100%; background-color: #35aaf7;}
 .turu {width: 100%; background-color: #36BFAF;}
@@ -362,6 +362,7 @@ header .hamburger a{
     display: flex;
     flex-wrap: wrap;
     transition: ease all .5s;
+    /* background-color: ; */
 }
 .banner3 .card .box1, .box2, .box3{
     min-width: 300px;
@@ -488,9 +489,19 @@ header .hamburger a{
     }
     
 }
-@media only screen and (max-width:1493px){
+@media only screen and (max-width:1600px){
     .banner3{
         height: 1600px;
+    }
+    header .logo{
+        /* background-color: green; */
+        margin-top: -50px;
+        padding: 10px 20px 20px 30px ;
+    }
+    .navbar ul{
+        /* background-color: #d4d4d4; */
+        margin-top: -50px;
+        padding: 10px;
     }
 }
 @media only screen and (max-width:1484px){
@@ -618,6 +629,7 @@ header .hamburger a{
     }
     .banner3{
         height: 800px;
+        margin: 10px;
     } 
     .banner3 .card .box1, .box2, .box3{
         margin: 16px;
@@ -725,7 +737,11 @@ header .hamburger a{
     }
     .banner3 {
         height: 1280px;
-        background-color: #F5F5F5;
+        background-color: #f5f5f5;
+        padding: 50px 10px 0px 30px;
+    }
+    .banner3 .card .box1, .box2, .box3{
+        width: 220px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -756,11 +772,10 @@ header .hamburger a{
     .banner .container .about{
         height: 400px;
         width: 400px;
-        padding: 10px 00px 0 20px;
+        padding: 10px 0px 0 20px;
     }
     .banner .container .about h1{
-        font-size: 40px;
-        margin: 10px 0 10px 0;
+        font-size: 10%;
     }
     .banner .container .about h3{
         font-size: 24px;
@@ -821,6 +836,7 @@ header .hamburger a{
     .banner2 h1{
         font-size: 35px;
         margin-left: -10px;
+        padding-bottom: 40px;
     }
     .banner2 .container{
         height: 1080px;
@@ -858,10 +874,16 @@ header .hamburger a{
     .banner1 .container{
         height: 0px;
     }
-    .banner2 .container .left-con .box{
-        width: 450px;
-    }
+    .banner2 .container .left-con .box,
     .banner2 .container .right-con .box{
-        width: 450px;
+        width: 500px;
     }
+}
+
+@media only screen and (max-width: 520px){    
+    .banner2 .container .right-con .box,
+    .banner2 .container .left-con .box{
+        width: 400px;
+    }
+
 }
