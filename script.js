@@ -60,11 +60,11 @@ window.addEventListener('scroll', function() {
     if (animationPosition < screenPosition / 2) {
       setTimeout(function() {
         animation.classList.add('active');
-      }, 5000);
+      },0);
     }
   });
   
   document.querySelector('.animated-text').addEventListener('click', function() {
     var nextSection = document.querySelector('#profile');
-    nextSection.scrollIntoView({ behavior: 'smooth' });
+    nextSection.scrollIntoView({ behavior: 'unset' });
   });
