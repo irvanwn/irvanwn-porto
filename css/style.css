@@ -822,7 +822,7 @@ header .hamburger a{
         height: 100px;
     }
     .navbar.active{
-        height: 250px;
+        height: 0px;
     }
     .navbar.active ul{
         opacity: 1;
