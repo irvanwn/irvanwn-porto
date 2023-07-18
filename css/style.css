@@ -500,7 +500,7 @@ header .hamburger a{
     }
     .navbar ul{
         /* background-color: #d4d4d4; */
-        margin-top: -50px;
+        margin-top: -30px;
         padding: 10px;
     }
 }
@@ -642,6 +642,12 @@ header .hamburger a{
     header{
         padding: 0 50px 0px 0px;
     }
+    header .logo{
+        /* background-color: green; */
+        margin-top: 0px;
+        /* padding: 10px 20px 20px 30px ; */
+    }
+    
     .banner{
         background-size: 100%;
         width: 1250px;
@@ -753,6 +759,9 @@ header .hamburger a{
         background-size: 768px;
         height: 400px;
 
+    }
+    header .logo{
+        padding: 10px 20px 20px 10px ;
     }
     .banner .container{
         height: 400px;
