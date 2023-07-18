@@ -630,7 +630,7 @@ header .hamburger a{
     .banner3{
         height: 800px;
         margin: 10px;
-        background-color: #1A1A1A;
+        background-color: #ffffff;
     } 
     .banner3 .card .box1, .box2, .box3{
         margin: 16px;
@@ -639,7 +639,6 @@ header .hamburger a{
 }
 
 @media only screen and (max-width: 1250px){
-
     header{
         padding: 0 50px 0px 0px;
     }
@@ -696,6 +695,7 @@ header .hamburger a{
     }
 }
 @media only screen and (max-width: 1050px){
+    ::-webkit-scrollbar { display: none; }
     .banner{
         background-size: 100%;
         width: 1050px;
