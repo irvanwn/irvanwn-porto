@@ -404,7 +404,7 @@ header .hamburger a{
 .footer-2{
     margin: 10px 0px 20px 0px;
     width: 100%;   
-    background-color: white;
+    background-color: rgb(246, 246, 246);
 }
 .footer-2 img{
     display: block;
