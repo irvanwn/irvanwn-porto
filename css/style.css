@@ -914,6 +914,14 @@ header .hamburger a{
     .banner2 .container .left-con .box{
         width: 400px;
     }
+@media only screen and (max-width: 393px){    
+    body{
+        max-width: 393px;
+    }
 
+    .banner2 .container .right-con .box,
+    .banner2 .container .left-con .box{
+        width: 300px;
+    }
 
 }
